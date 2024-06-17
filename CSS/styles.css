@@ -1,0 +1,48 @@
+.tit_tabla{
+
+    color:white;
+    background-color: blue;
+}
+
+#fila1{
+
+    background-color:yellow;
+}
+#fila2{
+    background-color: pink;
+}
+#fila3{
+
+    background-color: aqua;
+}
+#facebook{
+
+    background-color: black;
+    color: white;
+}
+#parrafo1{
+
+    background-color: blueviolet;
+
+}
+.div1{
+
+    background-color: aquamarine;
+
+}
+span{
+
+    text-decoration: underline;
+}
+#btn1{
+
+    background-color: aqua;
+    color:red;
+    border:none;
+    border-radius: 10px;
+}
+#btn2{
+    background-color: aquamarine;
+    color: green;
+    border:none;
+}
