@@ -16,27 +16,58 @@
 
     <div id="contenedor">
         <div id="sider">
-            <div id="outside">der</div>
+            <div id="outside">
+                <div id="logo">logo</div>
+                <div id="inferior">inferior</div>
+            </div>
             <div id="inside">
-                <div id="arriba">arriba</div>
+                <div id="arriba">
+                    <div id="espaciob">espacio</div>
+                    <button id="boton1">boton1</button>
+                </div>
                 <div id="abajo">abajo</div>
             </div>
         </div>
         <div id="centro">
             <div id="arriba">
-                <div id="boton">boton2</div>
-                <div id="boton">boton3</div>
-                <div id="boton">boton4</div>
+                <button id="boton">boton2</button>
+                <button id="boton">boton3</button>
+                <button id="boton">boton4</button>
             </div>
-            <div id="imagen">imagen</div>
+        
+            <div id="imagen">
+                <div class="slider">
+                    <div class="siders">
+                        <div class="slide active">
+                            <img src="IMAGES/Imagen1.jpg" alt="imagen1">
+                        </div>
+                        <div class="slide">
+                            <img src="IMAGES/Imagen2.jpg" alt="imagen2">
+                        </div>
+                        <div class="slide">
+                            <img src="IMAGES/Imagen3.jpg" alt="imagen3">
+                        </div>     
+                    </div>
+                    <button class="prev"onclick="prevSlide()">Anterior</button>
+                    <button class="next"onclick="nextSlide()">Siguiente</button>
+            
+                </div>
+            </div>
             <div id="texto">texto</div>
         </div>
         <div id="sider">
             <div id="inside">
-                <div id="arriba">arriba</div>
+                <div id="arriba">
+                    <button id="boton1">boton5</button>
+                    <div id="espaciob">espacio</div>
+                    
+                </div>
                 <div id="abajo">abajo</div>
             </div>                
-            <div id="outside">izq</div>
+            <div id="outside">
+                <div id="logo">logo</div>
+                <div id="inferior">inferior</div>
+            </div>
         </div>
     </div>
      <!-- Espacio entre el slide y la parte inferior-->
@@ -63,7 +94,9 @@
     <div id="pieD">
         <div id="derechos">derechos de autor</div>
         <div id="contacto">Datos de contacto</div>
-        <div class="otros">Otras cosas</div>
+        <div class="otros">
+            <a href="../sidebar.html">ir a sidebar</a>
+        </div>
     </div>
 </body>
 </html>

@@ -1,21 +1,13 @@
-#superior,#espcio{/*Espacios entre las secciones de la página*/
+#espcio{/*Espacios entre las secciones de la página*/
     height:1hv;
 }
-.barra{
-    display:flex;
-    height: 5vh;
-    text-align:center;
-}
-#boton{
-    flex:1;
-    padding: 10px;
-    box-sizing:border-box;
-    border: 1px solid black;
-}
+
+
 #contenedor{
     display: flex;
     flex-direction: row;
     height: 50vh;
+    padding:0;
 }
 #sider{
     display:flex;
@@ -23,23 +15,21 @@
     flex: 1; /* Las partes superior e inferior ocupan cada una un espacio proporcional */
     background-color: #f0f0f0;
     text-align: center;
-    padding: 5px;
+    padding: 0px;
 }
 #outside{
 display:flex;
 flex-direction: column;
 flex:1;
-padding:5px;
 box-sizing:border-box;
-border:1px solid black;
 }
 #inside{
     display:flex;
     flex-direction:column;
     flex:1;
-    padding:5px;
+    padding:0px;
     box-sizing:border-box;
-    border:1px solid black;
+   
 }
 #centro{
     display: flex;
@@ -47,27 +37,26 @@ border:1px solid black;
     flex:20%;
     background-color:aqua;
     text-align:center;
-    padding:5px;    
+    padding:0px;    
 }
 #arriba{
+    background-color: white;
     display:flex;
     flex-direction: row;
     flex:8%;
-    border:1px solid black;
-    padding:5px;
+   padding:0;
 }
 #abajo{
     display:flex;
     flex-direction: row;
-    flex:85%;
+    flex:84%;
     border:1px solid black;
     padding:5px;
 }
 
 #imagen{
-    flex:80%;
+    flex:69%;
     justify-content: center;
-    border: 1px solid black;
     padding: 5px;
 }
 #texto{
@@ -106,4 +95,36 @@ border:1px solid black;
     box-sizing:border-box;
     border: 1px solid black;
 
+}
+#logo, #inferior{
+    flex:1;
+    border: 1px solid black;
+
+}
+#boton1{
+    float:left;
+    flex:90;
+}
+button{
+    flex:1;
+    background-color: grey;
+    box-sizing: border-box;
+    margin:5px;
+    border: none;  
+   
+}
+
+button:hover{
+    transform: scale(1.1); 
+    background-color: #45a049; 
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3); /* Sombra */
+}
+button:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#imagen img{
+    max-width: 100%;
+      height: auto; /* Mantiene la proporción de la imagen */
+      display: block; /* Elimina el espacio inferior */
 }
