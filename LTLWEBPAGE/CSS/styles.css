@@ -1,4 +1,4 @@
-#espcio{/*Espacios entre las secciones de la página*/
+#espacio{/*Espacios entre las secciones de la página*/
     height:1hv;
 }
 
@@ -6,7 +6,7 @@
 #contenedor{
     display: flex;
     flex-direction: row;
-    height: 50vh;
+    height: 80vh;
     padding:0;
 }
 #sider{
@@ -49,13 +49,13 @@ box-sizing:border-box;
 #abajo{
     display:flex;
     flex-direction: row;
-    flex:84%;
+    flex:89%;
     border:1px solid black;
     padding:5px;
 }
 
 #imagen{
-    flex:69%;
+    flex:70%;
     justify-content: center;
     padding: 5px;
 }
@@ -103,13 +103,13 @@ box-sizing:border-box;
 }
 #boton1{
     float:left;
-    flex:90;
+    flex:98;
 }
 button{
     flex:1;
     background-color: grey;
     box-sizing: border-box;
-    margin:5px;
+    margin:2px;
     border: none;  
    
 }
@@ -123,8 +123,48 @@ button:hover:before {
     transform: translate(-50%, -50%) scale(1);
 }
 
-#imagen img{
-    max-width: 100%;
-      height: auto; /* Mantiene la proporción de la imagen */
-      display: block; /* Elimina el espacio inferior */
+#imagen-img{
+    width: auto;
+    max-height: 100%; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio inferior */
+    background-size: cover;
+}
+.slider {
+    position: relative;
+   
+    margin: auto;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
