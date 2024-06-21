@@ -6,7 +6,7 @@
 #contenedor{
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    height: 50%;
     padding:0;
 }
 #sider{
@@ -34,7 +34,7 @@ box-sizing:border-box;
 #centro{
     display: flex;
     flex-direction: column;
-    flex:20%;
+    flex:0 1 40%;
     background-color:aqua;
     text-align:center;
     padding:0px;    
@@ -43,24 +43,29 @@ box-sizing:border-box;
     background-color: white;
     display:flex;
     flex-direction: row;
-    flex:8%;
+    flex:0 0 10%;
    padding:0;
+   overflow: hidden;
 }
 #abajo{
     display:flex;
     flex-direction: row;
     flex:89%;
     border:1px solid black;
-    padding:5px;
+    padding:0px;
 }
 
 #imagen{
-    flex:70%;
+    flex: 0 0 70%;
     justify-content: center;
     padding: 5px;
+    border: 1px solid black;
+    overflow:hidden;
+    
 }
 #texto{
-    flex:10%;
+    flex:0 0 
+    12%;
    place-items: center;
     border: 1px solid black;
     padding: 5px;
@@ -110,6 +115,7 @@ button{
     background-color: grey;
     box-sizing: border-box;
     margin:2px;
+    margin-bottom: none;
     border: none;  
    
 }
@@ -124,8 +130,8 @@ button:hover:before {
 }
 
 #imagen-img{
-    width: auto;
-    max-height: 100%; /* Mantiene la proporción de la imagen */
+    max-width:  100%;
+    height: auto; /* Mantiene la proporción de la imagen */
     display: block; /* Elimina el espacio inferior */
     background-size: cover;
 }
