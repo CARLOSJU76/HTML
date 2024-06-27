@@ -133,13 +133,13 @@ body{
 .next{
     right: 10px;
 }
-.prev:hover{
+
+.next:hover, .prev:hover{
     color:gold; /* Color del texto al pasar el cursor */   
     box-shadow: 0 6px 8px #00000033; /* Sombra más pronunciada al pasar el cursor */
     transform: scale(1.05);
+
 }
-.next:hover{
-    color: #820000; /* Color del texto al pasar el cursor */   
-    box-shadow: 0 6px 8px #00000033; /* Sombra más pronunciada al pasar el cursor */
-    transform: scale(1.05);
+.next:active, .prev:active{
+    color:#660000;
 }
